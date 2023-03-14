@@ -1,4 +1,6 @@
 import random
+from random import shuffle
+import array
 N=int(input())
 A=[randint(1,N) for x in range (N)]
 print("Тип данных ", type(A))
