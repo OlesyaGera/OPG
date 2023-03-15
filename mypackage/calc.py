@@ -1,4 +1,3 @@
-importmypackage.calc as calc
 __all__ = ['add','diff']
 
 # Модуль вычислений
@@ -22,4 +21,4 @@ def func():
     pass
 
 if __name__ == "__main__":
-    pass
+    print(add(10,20))
