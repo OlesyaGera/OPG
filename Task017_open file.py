@@ -1,4 +1,4 @@
-file=open('my_file1.txt','r',encoding="cp866")
+file=open('my_file.txt','r',encoding="UTF-8")
 contents=file.read()
 print(contents)
 file.close()
