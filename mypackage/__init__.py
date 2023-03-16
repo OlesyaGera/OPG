@@ -1,5 +1,5 @@
-from .calc import *
-# from .docs import *
+from calc import add
 
-NAME="Package for calculator functions"
+
+print(add(2,3))
 
