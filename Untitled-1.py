@@ -1,28 +1,18 @@
-class Cat():
-  def __init__(self, breed, color, age):
-     self._breed = breed
-     self._color = color
-     self._age = age
-
-  @property
-  def breed(self):
-    return self._breed
-    
-  @property
-  def color(self):
-    return self._color
-    
-  @property
-  def age(self):
-    return self._age
-  
-  @age.setter
-  def age(self, new_age):
-    if new_age > self._age:
-      self._age = new_age
-    return self._age
-  
-cat = Cat('Абиссинская', 'Рыжая', 4)
-print(cat.breed)
-print(cat.color)
-print(cat.age)
+oldi = ["1", "2", "3"]
+newi = [] 
+for item in oldi:
+    newi.append(int(item))	
+print(newi)
+mixt = ["ab", "ac", "ad", "ab", "ab", "ac", "a"]
+ft = list(filter(lambda x: x == "ab", mixt))
+print(ft)	
+a = list(filter(lambda x:x%2, [1,2,3,4,5,6,7,8]))
+print(a)	
+a = [-1,0,1,0,0,1,0,-1]
+b = list(filter(None, a)) 
+print(b)
+from functools import reduce
+def func(prev, curr):
+    return prev + 2 * curr
+a = reduce(func, [1, 2, 3, 4, 5]) 
+print(a)
