@@ -34,3 +34,5 @@ print(obj1.color)
 print(obj1.age)
 CatsandDogs.age = 5
 print(obj1.age)
+
+input()
